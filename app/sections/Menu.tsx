@@ -11,8 +11,8 @@ const Menu = ({ navigation }) => {
   return (
         <View style={styles.container}>
             <View style={styles.buttonRow}>
-                <TouchableOpacity style={styles.buttonStyles} onPress={onPress}>
-                    <Text style={styles.buttonText}>LESSONS</Text>
+                <TouchableOpacity style={styles.buttonStyles} onPress={() => navigation.navigate('CardList')}>
+                    <Text style={styles.buttonText}>CARDS</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.buttonStyles} onPress={onPress}>
                     <Text style={styles.buttonText}>REGISTER</Text>

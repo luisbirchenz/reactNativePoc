@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import PropTypes from 'prop-types';
 
-const Header = ({message}) => {
+const Header = ({ message }) => {
 
   const [loggedIn, isLoggedIn] = useState(false);
   const display = isLoggedIn ? `User logged:${loggedIn}` : message;
@@ -15,7 +15,6 @@ const Header = ({message}) => {
             <Image
                 style={styles.logoStyle}
                 source={require('./img/logo.png')}
-
             />
             <Text style={styles.headText} onPress={toggleUser}>{display}</Text>
         </View>
